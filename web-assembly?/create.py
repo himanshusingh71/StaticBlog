@@ -41,7 +41,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 </head>
 <body class="flex flex-col items-center min-h-screen">
     <!-- Header -->
-    <header class="w-full text-center py-6 text-6xl font-bold ascii-text underline">
+    <header class="w-full text-center py-6 sm:text-4xl md:text-6xl lg:text-6xl font-bold ascii-text underline">
        <a href="../"> Himanshu's Blog </a>
     </header>
     
