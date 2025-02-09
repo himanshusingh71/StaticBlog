@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himanshu's Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
+    .ascii-text {
+        font-family: 'Fira Code', monospace;
+        font-size: 2rem;
+    }
+
+
+        /* Soft Gray Theme */
+        body {
+            background-color: #a6a39c; /* Light Gray */
+            color: black; /* Dark Gray */
+            font-family: 'Fira Code', monospace;
+        }
+
+        a {
+            color: #0074D9; /* Slightly Darker Gray */
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #111111; /* Even Darker Gray on Hover */
+            text-decoration: underline;
+        }
+
+
+
+</style>
+</head>
+<body class="flex flex-col items-center min-h-screen">
+    <!-- Header -->
+    <header class="w-full text-center py-6 text-6xl font-bold ascii-text underline">
+       <a href="../"> Himanshu's Blog </a>
+    </header>
+    
+    <!-- Main Content -->
+    <main class="w-1/2  text-2xl flex flex-col my-8 mx-3 a ascii-text">
+       <p class='mb-4'><h1 class="text-3xl font-bold">WebAssembly (WASM) in Edge Computing: The Future of Fast, Portable Apps</h1><br> <h2 class="text-2xl font-semibold"><strong>What’s the Deal with WebAssembly?</strong></h2><br> Alright, so WebAssembly (WASM) started out as a way to make websites super fast. But now, it's breaking out of the browser and making waves in <strong>edge computing</strong>, cloud, and even blockchain.<br> <h2 class="text-2xl font-semibold"><strong>Why Use WASM for Edge Computing?</strong></h2><br> - <strong>It’s Crazy Fast</strong> – Near-native speeds without the bloat of traditional setups. - <strong>Runs Anywhere</strong> – Code once, run it on any architecture without worrying about dependencies. - <strong>Lightweight & Secure</strong> – No bulky VMs or containers—just quick, sandboxed execution.<br> <h2 class="text-2xl font-semibold"><strong>Where is WASM Actually Used?</strong></h2><br> <h2 class="text-xl font-semibold"><strong>1. Serverless Edge Functions</strong></h2> - Services like <strong>Cloudflare Workers</strong> and <strong>Fermyon Spin</strong> use WASM for near-instant serverless execution. - No cold starts. No waiting. Just snappy performance.<br> <h2 class="text-xl font-semibold"><strong>2. IoT & Tiny Devices</strong></h2> - Since WASM binaries are tiny, they work great on IoT devices. - No need to recompile for different hardware—just run the same binary everywhere.<br> <h2 class="text-xl font-semibold"><strong>3. Secure Execution</strong></h2> - Unlike containers, WASM doesn’t need a full OS, which means fewer security risks. - Perfect for running <strong>untrusted</strong> code safely.<br> <h2 class="text-2xl font-semibold"><strong>How Does It Work?</strong></h2><br> 1. Write your code in <strong>C, Rust, or AssemblyScript</strong>. 2. Compile it to WASM. 3. Run it in a lightweight runtime like <strong>WasmEdge, Wasmtime, or Wasmer</strong>. 4. Enjoy ridiculously fast execution at the edge.<br> <h2 class="text-2xl font-semibold"><strong>Why Should You Care?</strong></h2><br> If you’re building <strong>serverless apps, IoT solutions, or anything that needs to run fast without bloat</strong>, WASM is the future. It’s lightweight, secure, and just works everywhere. Give it a shot! </p>
+    </main>
+    
+    <!-- Footer -->
+<footer class="w-full flex justify-center items-center py-6 mt-auto">
+    <a href="https://www.linkedin.com/in/himanshu-bisht-93a199194/" class="underline">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.21 0 22.23 0zM7.08 20.49H3.56V9h3.52v11.49zM5.32 7.72a2.04 2.04 0 01-2.05-2.05c0-1.12.92-2.04 2.05-2.04s2.05.92 2.05 2.04c0 1.13-.92 2.05-2.05 2.05zM20.48 20.49h-3.52v-5.6c0-1.33-.03-3.04-1.86-3.04-1.86 0-2.14 1.46-2.14 2.96v5.68h-3.52V9h3.38v1.57h.05c.47-.9 1.62-1.86 3.34-1.86 3.58 0 4.24 2.35 4.24 5.4v6.38z"/>
+        </svg>
+    </a>
+</footer>
+</body>
+</html>
