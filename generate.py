@@ -70,7 +70,7 @@ def generate_blog_list():
         folder_path = os.path.join(os.getcwd(), folder)
         if os.path.isdir(folder_path) and os.path.exists(os.path.join(folder_path, "index.html")):
             encoded_folder = urllib.parse.quote(folder)
-            blog_links += f'<div class="my-8">&#128214;    <a href="{encoded_folder}/index.html" class="text-blue-500">{folder}</a></div>\n'
+            blog_links += f'<div class="my-8">&#128214;    <a href="{encoded_folder}/" class="text-blue-500">{folder}</a></div>\n'
     
     return blog_links
 
