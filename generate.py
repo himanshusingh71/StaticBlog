@@ -9,7 +9,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" />
     <title>Himanshu's Blog</title>
-
+    <script src="https://cdn.tailwindcss.com"></script>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
     .ascii-text {
@@ -34,71 +34,12 @@ HTML_TEMPLATE = """<!DOCTYPE html>
             text-decoration: underline;
         }
 
-.cursor-circle {
-    position: fixed;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: white;
-    pointer-events: none;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-    z-index: 9999;
-}
-
-/* Orbiting effect */
-.cursor-circle::before {
-    content: "";
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    border: 2px solid white;
-    border-radius: 50%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    animation: orbit 1s linear infinite;
-}
-
-@keyframes orbit {
-    0% { transform: translate(-50%, -50%) rotate(0deg) translateX(15px) rotate(0deg); }
-    100% { transform: translate(-50%, -50%) rotate(360deg) translateX(15px) rotate(-360deg); }
-}
-
-
 </style>
 
 
 
 </head>
 <body class="flex flex-col items-center min-h-screen">
-    <div class="cursor-circle"></div>
-    <script src="https://cdn.tailwindcss.com"></script>
-        <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const cursorCircle = document.querySelector(".cursor-circle");
-
-            let mouseX = 0, mouseY = 0;
-            let circleX = 0, circleY = 0;
-            const speed = 0.1; // Smoothness of movement
-
-            document.addEventListener("mousemove", (e) => {
-                mouseX = e.clientX;
-                mouseY = e.clientY;
-            });
-
-            function animate() {
-                // Smoothly interpolate position
-                circleX += (mouseX - circleX) * speed;
-                circleY += (mouseY - circleY) * speed;
-
-                // Set position and rotation
-                cursorCircle.style.transform = `translate(${circleX}px, ${circleY}px)`;
-
-                requestAnimationFrame(animate);
-            }
-
-            animate();
-        });
     <!-- Header -->
     <header class="sm:w-4/5 md:w-4/5 lg:w-full text-center py-6 sm:text-4xl md:text-6xl lg:text-6xl font-bold ascii-text underline" >
         Himanshu's Blog
