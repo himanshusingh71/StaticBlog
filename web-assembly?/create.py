@@ -46,7 +46,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     </header>
     
     <!-- Main Content -->
-    <main class="w-1/2  text-2xl flex flex-col my-8 mx-3 a ascii-text">
+    <main class="sm:w-4/5 md:w-4/5 lg:w-1/2  text-2xl flex flex-col my-8 mx-3 a ascii-text">
        {blog_content}
     </main>
     
