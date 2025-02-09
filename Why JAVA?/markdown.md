@@ -46,4 +46,5 @@ Java has been around since the dinosaurs (okay, since 1995, but still). Every fe
 
 If you want job security, Java is your best friend. It’s not cool, it’s not hip, but it pays the bills. Java developers may age, but Java itself? It’s immortal. 
 
+
 Now go write some boilerplate code and enjoy your `NullPointerException`. Happy coding!
