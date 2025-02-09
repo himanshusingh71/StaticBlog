@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Himanshu's Blog</title>
     <script src="https://cdn.tailwindcss.com"></script>
-<style>
+    <style>
     @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
     .ascii-text {
         font-family: 'Fira Code', monospace;
@@ -21,34 +21,28 @@
         }
 
         a {
-            color: #1a1c24 !important; /* Slightly Darker Gray */
+            color: #0074D9; /* Slightly Darker Gray */
+            text-decoration: none;
         }
 
         a:hover {
-            color: blue !important; /* Even Darker Gray on Hover */
+            color: #111111; /* Even Darker Gray on Hover */
             text-decoration: underline;
         }
 
+
+
 </style>
-
-
-
 </head>
 <body class="flex flex-col items-center min-h-screen">
     <!-- Header -->
-    <header class="w-full text-center py-6 text-6xl font-bold ascii-text underline" >
-        Himanshu's Blog
+    <header class="w-full text-center py-6 text-6xl font-bold ascii-text underline">
+       <a href="../"> Himanshu's Blog </a>
     </header>
     
     <!-- Main Content -->
-    <main class="flex flex-col items-center my-8 mx-3" >
-        <div class="text-3xl ascii-text">
-        <div class="my-8">&#128214;    <a href="Existentialism/index.html" class="text-blue-500">Existentialism</a></div>
-<div class="my-8">&#128214;    <a href="some%20shit/index.html" class="text-blue-500">some shit</a></div>
-<div class="my-8">&#128214;    <a href="some%20shit%20copy/index.html" class="text-blue-500">some shit copy</a></div>
-<div class="my-8">&#128214;    <a href="xyz/index.html" class="text-blue-500">xyz</a></div>
-
-        </div>
+    <main class="w-1/2  text-2xl flex flex-col my-8 mx-3 a ascii-text">
+       <p class='mb-4'><!--  <h1 class="text-3xl font-bold">big heading</h1> <h2 class="text-2xl font-semibold">smaller heading</h2> <h2 class="text-xl font-semibold">smallest heading</h2><br> \n\n means new line so just enter enter <br> <strong> text </strong> ( bold text)<br> <em class="italic">" "</em> ( italic text ) --><br> <h1 class="text-3xl font-bold">Existentialism : this is not so original</h1><br> <strong> what are you doing </strong><br> <em class="italic">"This is a test"</em><br> <div class="text-center"> what is this </div><br> </p>
     </main>
     
     <!-- Footer -->
@@ -59,6 +53,5 @@
         </svg>
     </a>
 </footer>
-
 </body>
 </html>
