@@ -9,16 +9,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" />
     <title>Himanshu's Blog</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-        <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const cursorCircle = document.querySelector(".cursor-circle");
 
-            document.addEventListener("mousemove", (e) => {
-                cursorCircle.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
-            });
-        });
-    </script>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
     .ascii-text {
@@ -72,7 +63,16 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 </head>
 <body class="flex flex-col items-center min-h-screen">
     <div class="cursor-circle"></div>
+    <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const cursorCircle = document.querySelector(".cursor-circle");
 
+            document.addEventListener("mousemove", (e) => {
+                cursorCircle.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+            });
+        });
+    </script>
 
     <!-- Header -->
     <header class="sm:w-4/5 md:w-4/5 lg:w-full text-center py-6 sm:text-4xl md:text-6xl lg:text-6xl font-bold ascii-text underline" >
