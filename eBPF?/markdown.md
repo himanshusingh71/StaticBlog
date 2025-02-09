@@ -4,6 +4,7 @@
 
 eBPF (Extended Berkeley Packet Filter) is a revolutionary technology that allows running sandboxed programs inside the Linux kernel. Originally designed for network filtering, eBPF has evolved into a powerful framework for observability, security, and performance monitoring.
 
+
 ## Why is eBPF So Powerful?
 
 - Runs in the Kernel, But Safely – eBPF programs execute inside the kernel without modifying its source code.
@@ -12,10 +13,12 @@ eBPF (Extended Berkeley Packet Filter) is a revolutionary technology that allows
 
 ## Key Use Cases
 
+
 ### Performance Monitoring & Tracing
 
 - Tools like bcc and bpftrace use eBPF to collect real-time system performance data.
 - Enables deep insights into system behavior without slowing it down.
+
 
 ### Network Observability & Firewalls
 
@@ -27,12 +30,14 @@ eBPF (Extended Berkeley Packet Filter) is a revolutionary technology that allows
 - eBPF enables runtime security monitoring with tools like Falco.
 - Can detect anomalies, such as unauthorized system calls, in real-time.
 
+
 ## How eBPF Works
 
 1. A user writes an eBPF program in C or Rust.
 2. The program is compiled into bytecode.
 3. The Linux kernel verifies and JIT-compiles the bytecode into native machine code.
 4. The eBPF program hooks into kernel events and executes safely.
+
 
 ## Why You Should Care
 
