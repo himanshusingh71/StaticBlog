@@ -36,8 +36,14 @@ Spring Boot is like that overachieving student in school—tries to do everythin
 ## How Does Spring Boot Work? (With a Lot of Annotations)
 
 1. Write a Java class.
+
+
 2. Add `@SpringBootApplication`.
+
+
 3. Magically, everything starts working (until it doesn’t).
+
+
 4. Forget to configure something? Enjoy debugging cryptic stack traces.
 
 
