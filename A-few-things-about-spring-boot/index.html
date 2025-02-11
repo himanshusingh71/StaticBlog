@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" />
+    <title>Himanshu's Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
+    .ascii-text {
+        font-family: 'Fira Code', monospace;
+        font-size: 2rem;
+    }
+
+
+        /* Soft Gray Theme */
+        body {
+            background-color: #a6a39c; /* Light Gray */
+            color: black; /* Dark Gray */
+            font-family: 'Fira Code', monospace;
+        }
+
+        a {
+            color: #0074D9; /* Slightly Darker Gray */
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #111111; /* Even Darker Gray on Hover */
+            text-decoration: underline;
+        }
+
+
+
+</style>
+</head>
+<body class="flex flex-col items-center min-h-screen">
+    <!-- Header -->
+    <header class="w-full text-center py-6 sm:text-4xl md:text-6xl lg:text-6xl font-bold ascii-text underline">
+       <a href="../"> Himanshu's Blog </a>
+    </header>
+    
+    <!-- Main Content -->
+    <main class="sm:w-4/5 md:w-4/5 lg:w-1/2  text-2xl flex flex-col my-8 mx-3 a ascii-text">
+       <p class='mb-4'><h1 class="text-3xl font-bold">Spring Boot: The Framework You Can't Escape</h1><br> <h2 class="text-2xl font-semibold">What’s the Deal with Spring Boot?</h2><br> Spring Boot is like that overachieving student in school—tries to do everything, sometimes does too much, but still gets all the attention. It simplifies Java development (allegedly) and lets you build enterprise applications quickly (relatively speaking).<br> <h2 class="text-2xl font-semibold">Why Won’t Spring Boot Die?</h2><br> - <strong>Enterprise-Approved</strong> – If a company has money, they probably have a Spring Boot app. - <strong>Autoconfiguration Magic</strong> – It does a lot for you… until it doesn’t, and then you cry. - <strong>Microservices Darling</strong> – Because breaking a monolith into 500 tiny services is apparently progress.<br> <h2 class="text-2xl font-semibold">Where is Spring Boot Actually Used? (Everywhere, Unfortunately)</h2><br> <h2 class="text-xl font-semibold">Enterprise Software (a.k.a. The Kingdom of XML Refugees)</h2><br> - Banking apps, insurance software, and legacy systems nobody dares to touch. - It replaced Java EE, but the pain remains.<br> <h2 class="text-xl font-semibold">REST APIs (a.k.a. The Reason Postman Exists)</h2><br> - Spring Boot + REST = Every backend tutorial ever. - "Just add `@RestController`, and you're done!" (Lies.)<br> <h2 class="text-xl font-semibold">Microservices (Because Monoliths Were Too Simple)</h2><br> - Spring Boot loves microservices. - Developers love debugging distributed systems at 2 AM. - Kubernetes + Spring Boot = infinite job security.<br> <h2 class="text-2xl font-semibold">How Does Spring Boot Work? (With a Lot of Annotations)</h2><br> 1. Write a Java class. 2. Add `@SpringBootApplication`. 3. Magically, everything starts working (until it doesn’t). 4. Forget to configure something? Enjoy debugging cryptic stack traces.<br> <h2 class="text-2xl font-semibold">Why Should You Care?</h2><br> Spring Boot may not be exciting, but it's reliable. It’s like that old car that keeps running no matter what. If you want job security, understanding Spring Boot is like knowing how to cook rice—basic survival skill in enterprise Java.<br> Now go create a bloated `application.properties` file and fight with dependency hell. Happy coding! </p>
+    </main>
+    
+    <!-- Footer -->
+<footer class="w-full flex justify-center items-center py-6 mt-auto">
+    <a href="https://www.linkedin.com/in/himanshu-bisht-93a199194/" class="underline">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.21 0 22.23 0zM7.08 20.49H3.56V9h3.52v11.49zM5.32 7.72a2.04 2.04 0 01-2.05-2.05c0-1.12.92-2.04 2.05-2.04s2.05.92 2.05 2.04c0 1.13-.92 2.05-2.05 2.05zM20.48 20.49h-3.52v-5.6c0-1.33-.03-3.04-1.86-3.04-1.86 0-2.14 1.46-2.14 2.96v5.68h-3.52V9h3.38v1.57h.05c.47-.9 1.62-1.86 3.34-1.86 3.58 0 4.24 2.35 4.24 5.4v6.38z"/>
+        </svg>
+    </a>
+</footer>
+</body>
+</html>
