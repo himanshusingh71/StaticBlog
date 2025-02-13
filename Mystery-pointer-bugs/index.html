@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" />
+    <title>Himanshu's Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
+    .ascii-text {
+        font-family: 'Fira Code', monospace;
+        font-size: 2rem;
+    }
+
+
+        /* Soft Gray Theme */
+        body {
+            background-color: #a6a39c; /* Light Gray */
+            color: black; /* Dark Gray */
+            font-family: 'Fira Code', monospace;
+        }
+
+        a {
+            color: #0074D9; /* Slightly Darker Gray */
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #111111; /* Even Darker Gray on Hover */
+            text-decoration: underline;
+        }
+
+
+
+</style>
+</head>
+<body class="flex flex-col items-center min-h-screen">
+    <!-- Header -->
+    <header class="w-full text-center py-6 sm:text-4xl md:text-6xl lg:text-6xl font-bold ascii-text underline">
+       <a href="../"> Himanshu's Blog </a>
+    </header>
+    
+    <!-- Main Content -->
+    <main class="sm:w-4/5 md:w-4/5 lg:w-1/2  text-2xl flex flex-col my-8 mx-3 a ascii-text">
+       <p class='mb-4'><h1 class="text-3xl font-bold">The Mystery Pointer Bug: A Debugging Horror Story  </h1><br> <h2 class="text-2xl font-semibold">The Setup  </h2><br> It always starts the same way. Your code looks clean. Your logic is solid. The compiler doesn't complain. You run it... and <strong>boom</strong>—a segmentation fault.  <br> Or worse—your program runs, but <strong>something is off</strong>. Random crashes. Corrupted data. Undefined behavior that only happens <em class="italic">sometimes</em>.  <br> Congratulations, you've entered the realm of <strong>The Mystery Pointer Bug</strong>.  <br> <h2 class="text-2xl font-semibold">The Symptoms  </h2><br> The mystery pointer bug is a shapeshifter. It can take many forms:   - <strong>The Segfault Phantom</strong> – Your program crashes, but only when you’re not looking.   - <strong>The Corruptor</strong> – Your data structures get mysteriously modified, but you have <em class="italic">no idea why</em>.   - <strong>The Ghostly Execution</strong> – Code that shouldn’t be running suddenly executes, as if possessed.   - <strong>The Schrodinger's Bug</strong> – It disappears when you add print statements but comes back when you remove them.  <br> At first, you think it’s a small issue. Then, after hours of debugging, you realize <strong>it’s been lurking in your code for weeks</strong>.  <br> <h2 class="text-2xl font-semibold">The Usual Suspects  </h2><br> Every mystery needs suspects. When dealing with pointer bugs, these are the usual culprits:  <br> 1. <strong>Dangling Pointers</strong> – You free memory but keep using the pointer, leading to <em class="italic">random</em> crashes.   2. <strong>Buffer Overflows</strong> – You write past the allocated memory, corrupting data or jumping into the abyss.   3. <strong>Uninitialized Pointers</strong> – The classic “this should work” moment, followed by utter confusion.   4. <strong>Double Free or Use-After-Free</strong> – You think you’re cleaning up, but instead, you summon <strong>undefined behavior demons</strong>.   5. <strong>Stack Corruption</strong> – That one innocent-looking array goes out of bounds and suddenly, your function returns to <em class="italic">nowhere</em>.  <br> <h2 class="text-2xl font-semibold">The Investigation  </h2><br> Once you’ve identified that a mystery pointer bug exists, it’s time to hunt it down. Here’s the standard detective toolkit:  <br> <h2 class="text-xl font-semibold">🔍 <strong>Print Debugging (a.k.a. Desperation Mode)</strong>  </h2> - Add `printf` statements everywhere.   - Realize that print statements affect memory layout, sometimes <em class="italic">hiding</em> the bug.   - Lose faith in humanity.  <br> <h2 class="text-xl font-semibold">🛠 <strong>Valgrind & Address Sanitizer (a.k.a. Holy Water for Pointers)</strong>  </h2> - Use tools like <strong>Valgrind</strong> to detect memory leaks and invalid accesses.   - Compile with `-fsanitize=address` and watch it scream at your code.   - Feel dumb when you realize the bug was something obvious.  <br> <h2 class="text-xl font-semibold">🧠 <strong>Code Review (a.k.a. Asking for Help)</strong>  </h2> - Explain your issue to someone else.   - Spot the bug <em class="italic">while</em> explaining it.   - Pretend you knew it all along.  <br> <h2 class="text-2xl font-semibold">The Resolution  </h2><br> Eventually, after hours (or days) of debugging, you find it. Some innocent-looking line of code—an off-by-one error, a misplaced `*`, a `free()` in the wrong place.  <br> You fix it. The program works.  <br> But deep down, you know... <strong>the mystery pointer bug always returns.</strong>  <br> <h2 class="text-xl font-semibold">Final Words  </h2><br> Pointer bugs are <strong>evil</strong>, but they teach you to respect memory management. If you've ever spent hours tracking one down, congrats—you've survived a rite of passage in low-level programming.  <br> Now go write some more C++ and summon another bug.   </p>
+    </main>
+    
+    <!-- Footer -->
+<footer class="w-full flex justify-center items-center py-6 mt-auto">
+    <a href="https://www.linkedin.com/in/himanshu-bisht-93a199194/" class="underline">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.21 0 22.23 0zM7.08 20.49H3.56V9h3.52v11.49zM5.32 7.72a2.04 2.04 0 01-2.05-2.05c0-1.12.92-2.04 2.05-2.04s2.05.92 2.05 2.04c0 1.13-.92 2.05-2.05 2.05zM20.48 20.49h-3.52v-5.6c0-1.33-.03-3.04-1.86-3.04-1.86 0-2.14 1.46-2.14 2.96v5.68h-3.52V9h3.38v1.57h.05c.47-.9 1.62-1.86 3.34-1.86 3.58 0 4.24 2.35 4.24 5.4v6.38z"/>
+        </svg>
+    </a>
+</footer>
+</body>
+</html>
