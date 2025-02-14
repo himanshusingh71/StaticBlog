@@ -8,6 +8,10 @@ SOURCE_FILE="create.py"
 
 python3 ol.py "$1"
 
+
+
+echo "Generated blog successfully!!!"
+
 # Check if create.py exists in the current directory
 if [ ! -f "$SOURCE_FILE" ]; then
     echo "Error: $SOURCE_FILE not found in the current directory!"
