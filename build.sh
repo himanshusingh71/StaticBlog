@@ -6,6 +6,8 @@
 # Path to create.py in the current directory
 SOURCE_FILE="create.py"
 
+python3 ol.py "$1"
+
 # Check if create.py exists in the current directory
 if [ ! -f "$SOURCE_FILE" ]; then
     echo "Error: $SOURCE_FILE not found in the current directory!"
