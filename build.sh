@@ -6,7 +6,8 @@ source blog/bin/activate
 # Path to create.py in the current directory
 SOURCE_FILE="create.py"
 
-python3 ol.py "$1"
+[[ -n "$1" ]] && python3 ol.py "$1"
+
 
 
 
