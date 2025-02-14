@@ -33,14 +33,17 @@ done
 echo "Replacement completed!"
 
 
-
 for dir in */ ; do
-    # Check if it's a directory and contains create.py
-    if [ -d "$dir" ] && [ -f "$dir/create.py" ]; then
+    # Extract the directory name without the trailing slash
+    dir_name=$(basename "$dir")
+
+    # Check if it's a directory, not "blog" or "path", and contains create.py
+    if [ -d "$dir" ] && [ -f "$dir/create.py" ] && [ "$dir_name" != "blog" ] && [ "$dir_name" != "path" ]; then
         echo "Running create.py inside $dir..."
         (cd "$dir" && python3 create.py)
     fi
 done
+
 
 # Run generate.py in the current directory
 if [ -f "generate.py" ]; then
