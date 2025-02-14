@@ -2,6 +2,7 @@
 
 # Iterate over all directories in the current directory
 #!/bin/bash
+python3 -m venv path/to/venv
 source path/to/venv/bin/activate
 # Path to create.py in the current directory
 SOURCE_FILE="create.py"
