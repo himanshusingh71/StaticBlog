@@ -1,17 +1,3 @@
-first ->
+download this repo.
 
-create a folder with the blog title.
-
-inside the folder , copy the create.py file , create a markdown.m file.
-
-write your stuff in markdown.m file.
-
-inside the folder run python3 create.py
-
-cd .. of the folder
-
-run python3 create.py
-
-git push 
-
-automate the last part later.
+run bash build.sh ( runs create.py , create.py inside other folders -> reads markdown.md -> creates index.html )
